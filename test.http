@@ -1,0 +1,48 @@
+POST http://localhost:8080/convert
+Content-Type: application/json
+
+{
+  "from": "USD",
+  "to": "BRL",
+  "amount": 100
+}
+
+###
+POST http://localhost:8080/convert
+Content-Type: application/json
+
+{
+  "from": "BRL",
+  "to": "USD",
+  "amount": 500
+}
+
+###
+POST http://localhost:8080/convert
+Content-Type: application/json
+
+{
+  "from": "USD",
+  "to": "USD",
+  "amount": 250
+}
+
+###
+POST http://localhost:8080/convert
+Content-Type: application/json
+
+{
+  "from": "XXX",
+  "to": "YYY",
+  "amount": 10
+}
+
+###
+POST http://localhost:8080/convert
+Content-Type: application/json
+
+{
+  "from": "USD",
+  "to": "BRL",
+  "amount": "abc"
+}
